@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  tests:
+    image: python:3.9-slim
+    volumes:
+      - ./:/work
+    working_dir: /work
+    command: bash -c "pip install -r Automation/requirements.txt && pytest Automation/tests -q --html=reports/ui_report.html"

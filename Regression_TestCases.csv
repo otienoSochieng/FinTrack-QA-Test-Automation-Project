@@ -1,0 +1,2 @@
+TC_ID,Title,Steps,Expected_Result,Priority
+RG001,End-to-end Purchase Flow,Login; Add expense; Create budget; Generate report,All steps complete successfully,High

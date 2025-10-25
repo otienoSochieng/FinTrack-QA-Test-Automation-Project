@@ -1,0 +1,7 @@
+selenium
+pytest
+pytest-html
+requests
+allure-pytest
+mysql-connector-python
+locust

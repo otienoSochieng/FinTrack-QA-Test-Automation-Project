@@ -1,0 +1,43 @@
+{
+  "info": {
+    "name": "FinTrack API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"testuser@example.com\",\"password\":\"Password123\"}"
+        },
+        "url": {
+          "raw": "https://staging.fintrack.example/api/auth/login"
+        }
+      }
+    },
+    {
+      "name": "Create Transaction",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"type\":\"expense\",\"amount\":12.34,\"category\":\"food\"}"
+        },
+        "url": {
+          "raw": "https://staging.fintrack.example/api/transactions"
+        }
+      }
+    },
+    {
+      "name": "Get Reports",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://staging.fintrack.example/api/reports/monthly"
+        }
+      }
+    }
+  ]
+}
